@@ -426,43 +426,6 @@
       </GlobalHotkey>
       <GlobalHotkey>
         <downEvent>
-          <Group>Aircraft Miscellaneous Systems</Group>
-          <Description>Toggle gear handle</Description>
-          <SimulatorEventName>GEAR_TOGGLE</SimulatorEventName>
-          <MinValue>0</MinValue>
-          <MaxValue>0</MaxValue>
-          <ValueToSet>1</ValueToSet>
-          <RollMultiplier>1</RollMultiplier>
-          <IsAaoVirtualEvent>false</IsAaoVirtualEvent>
-          <type>SINGLE</type>
-        </downEvent>
-        <repeat>16384</repeat>
-        <repeatFrequency>1</repeatFrequency>
-        <joystickGuid>00000000-0000-0000-0000-000000000000</joystickGuid>
-        <joystickName />
-        <joystickButton>-1</joystickButton>
-        <joystickPovControl>-1</joystickPovControl>
-        <joystickPovDirection>-1</joystickPovDirection>
-        <midiDeviceId>1</midiDeviceId>
-        <midiChannel>10</midiChannel>
-        <midiEvent>20</midiEvent>
-        <endless>false</endless>
-        <midiEncoder>CLICK</midiEncoder>
-        <isSimKey>false</isSimKey>
-        <comboSuppressesEvent>false</comboSuppressesEvent>
-        <comboIsToggle>false</comboIsToggle>
-        <longClick>false</longClick>
-        <longClickTimeoutMs>0</longClickTimeoutMs>
-        <fastTurn>false</fastTurn>
-        <timeoutMs>0</timeoutMs>
-        <adaptiveRepeat>false</adaptiveRepeat>
-        <assignedKeys />
-        <vkModifiers />
-        <vkKeys />
-        <Action>GEAR_TOGGLE</Action>
-      </GlobalHotkey>
-      <GlobalHotkey>
-        <downEvent>
           <Group>Autopilot</Group>
           <Description>Toggles flight director on/off</Description>
           <SimulatorEventName>TOGGLE_FLIGHT_DIRECTOR</SimulatorEventName>
@@ -1277,43 +1240,6 @@
       </GlobalHotkey>
       <GlobalHotkey>
         <downEvent>
-          <Group>Aircraft Miscellaneous Systems</Group>
-          <Description>Toggles parking brake on/off</Description>
-          <SimulatorEventName>PARKING_BRAKES</SimulatorEventName>
-          <MinValue>0</MinValue>
-          <MaxValue>0</MaxValue>
-          <ValueToSet>1</ValueToSet>
-          <RollMultiplier>1</RollMultiplier>
-          <IsAaoVirtualEvent>false</IsAaoVirtualEvent>
-          <type>SINGLE</type>
-        </downEvent>
-        <repeat>16384</repeat>
-        <repeatFrequency>1</repeatFrequency>
-        <joystickGuid>00000000-0000-0000-0000-000000000000</joystickGuid>
-        <joystickName />
-        <joystickButton>-1</joystickButton>
-        <joystickPovControl>-1</joystickPovControl>
-        <joystickPovDirection>-1</joystickPovDirection>
-        <midiDeviceId>1</midiDeviceId>
-        <midiChannel>10</midiChannel>
-        <midiEvent>23</midiEvent>
-        <endless>false</endless>
-        <midiEncoder>CLICK</midiEncoder>
-        <isSimKey>false</isSimKey>
-        <comboSuppressesEvent>false</comboSuppressesEvent>
-        <comboIsToggle>false</comboIsToggle>
-        <longClick>false</longClick>
-        <longClickTimeoutMs>0</longClickTimeoutMs>
-        <fastTurn>false</fastTurn>
-        <timeoutMs>0</timeoutMs>
-        <adaptiveRepeat>false</adaptiveRepeat>
-        <assignedKeys />
-        <vkModifiers />
-        <vkKeys />
-        <Action>PARKING_BRAKES</Action>
-      </GlobalHotkey>
-      <GlobalHotkey>
-        <downEvent>
           <Group>A32NX Exp 1.0</Group>
           <Description>RPN</Description>
           <SimulatorEventName>A32NX Exp 1.0-A32NX - Button - Trk/Fpa</SimulatorEventName>
@@ -1702,6 +1628,258 @@
         <vkModifiers />
         <vkKeys />
         <Action>A320_Neo_FCU_EXPED_PUSH</Action>
+      </GlobalHotkey>
+      <GlobalHotkey>
+        <downEvent>
+          <Group>Autopilot</Group>
+          <Description>Decrements reference altitude</Description>
+          <SimulatorEventName>AP_SPD_VAR_DEC</SimulatorEventName>
+          <MinValue>0</MinValue>
+          <MaxValue>0</MaxValue>
+          <ValueToSet>1000</ValueToSet>
+          <RollMultiplier>1</RollMultiplier>
+          <IsAaoVirtualEvent>false</IsAaoVirtualEvent>
+          <type>SINGLE</type>
+        </downEvent>
+        <repeat>16384</repeat>
+        <repeatFrequency>1</repeatFrequency>
+        <joystickGuid>00000000-0000-0000-0000-000000000000</joystickGuid>
+        <joystickName />
+        <joystickButton>-1</joystickButton>
+        <joystickPovControl>-1</joystickPovControl>
+        <joystickPovDirection>-1</joystickPovDirection>
+        <midiDeviceId>1</midiDeviceId>
+        <midiChannel>10</midiChannel>
+        <midiEvent>3004</midiEvent>
+        <endless>false</endless>
+        <midiEncoder>TURN_LEFT</midiEncoder>
+        <isSimKey>false</isSimKey>
+        <combinedKey>
+          <repeat>16384</repeat>
+          <repeatFrequency>1</repeatFrequency>
+          <joystickGuid>00000000-0000-0000-0000-000000000000</joystickGuid>
+          <joystickName />
+          <joystickButton>-1</joystickButton>
+          <joystickPovControl>-1</joystickPovControl>
+          <joystickPovDirection>-1</joystickPovDirection>
+          <midiDeviceId>1</midiDeviceId>
+          <midiChannel>10</midiChannel>
+          <midiEvent>5</midiEvent>
+          <endless>false</endless>
+          <midiEncoder>CLICK</midiEncoder>
+          <isSimKey>false</isSimKey>
+          <comboSuppressesEvent>true</comboSuppressesEvent>
+          <comboIsToggle>true</comboIsToggle>
+          <longClick>false</longClick>
+          <longClickTimeoutMs>0</longClickTimeoutMs>
+          <fastTurn>false</fastTurn>
+          <timeoutMs>0</timeoutMs>
+          <adaptiveRepeat>false</adaptiveRepeat>
+          <assignedKeys />
+          <vkModifiers />
+          <vkKeys />
+        </combinedKey>
+        <comboSuppressesEvent>false</comboSuppressesEvent>
+        <comboIsToggle>false</comboIsToggle>
+        <longClick>false</longClick>
+        <longClickTimeoutMs>0</longClickTimeoutMs>
+        <fastTurn>false</fastTurn>
+        <timeoutMs>0</timeoutMs>
+        <adaptiveRepeat>false</adaptiveRepeat>
+        <assignedKeys />
+        <vkModifiers />
+        <vkKeys />
+        <Action>AP_SPD_VAR_DEC</Action>
+        <Label>SPD_DEC</Label>
+      </GlobalHotkey>
+      <GlobalHotkey>
+        <downEvent>
+          <Group>Autopilot</Group>
+          <Description>Decrements reference altitude</Description>
+          <SimulatorEventName>AP_SPD_VAR_INC</SimulatorEventName>
+          <MinValue>0</MinValue>
+          <MaxValue>0</MaxValue>
+          <ValueToSet>1000</ValueToSet>
+          <RollMultiplier>1</RollMultiplier>
+          <IsAaoVirtualEvent>false</IsAaoVirtualEvent>
+          <type>SINGLE</type>
+        </downEvent>
+        <repeat>16384</repeat>
+        <repeatFrequency>1</repeatFrequency>
+        <joystickGuid>00000000-0000-0000-0000-000000000000</joystickGuid>
+        <joystickName />
+        <joystickButton>-1</joystickButton>
+        <joystickPovControl>-1</joystickPovControl>
+        <joystickPovDirection>-1</joystickPovDirection>
+        <midiDeviceId>1</midiDeviceId>
+        <midiChannel>10</midiChannel>
+        <midiEvent>3004</midiEvent>
+        <endless>false</endless>
+        <midiEncoder>TURN_RIGHT</midiEncoder>
+        <isSimKey>false</isSimKey>
+        <combinedKey>
+          <repeat>16384</repeat>
+          <repeatFrequency>1</repeatFrequency>
+          <joystickGuid>00000000-0000-0000-0000-000000000000</joystickGuid>
+          <joystickName />
+          <joystickButton>-1</joystickButton>
+          <joystickPovControl>-1</joystickPovControl>
+          <joystickPovDirection>-1</joystickPovDirection>
+          <midiDeviceId>1</midiDeviceId>
+          <midiChannel>10</midiChannel>
+          <midiEvent>5</midiEvent>
+          <endless>false</endless>
+          <midiEncoder>CLICK</midiEncoder>
+          <isSimKey>false</isSimKey>
+          <comboSuppressesEvent>true</comboSuppressesEvent>
+          <comboIsToggle>true</comboIsToggle>
+          <longClick>false</longClick>
+          <longClickTimeoutMs>0</longClickTimeoutMs>
+          <fastTurn>false</fastTurn>
+          <timeoutMs>0</timeoutMs>
+          <adaptiveRepeat>false</adaptiveRepeat>
+          <assignedKeys />
+          <vkModifiers />
+          <vkKeys />
+        </combinedKey>
+        <comboSuppressesEvent>false</comboSuppressesEvent>
+        <comboIsToggle>false</comboIsToggle>
+        <longClick>false</longClick>
+        <longClickTimeoutMs>0</longClickTimeoutMs>
+        <fastTurn>false</fastTurn>
+        <timeoutMs>0</timeoutMs>
+        <adaptiveRepeat>false</adaptiveRepeat>
+        <assignedKeys />
+        <vkModifiers />
+        <vkKeys />
+        <Action>AP_SPD_VAR_INC</Action>
+        <Label>SPD_INC</Label>
+      </GlobalHotkey>
+      <GlobalHotkey>
+        <downEvent>
+          <Group>Autopilot</Group>
+          <Description>Decrements reference altitude</Description>
+          <SimulatorEventName>AP_ALT_VAR_DEC</SimulatorEventName>
+          <MinValue>0</MinValue>
+          <MaxValue>0</MaxValue>
+          <ValueToSet>1000</ValueToSet>
+          <RollMultiplier>1</RollMultiplier>
+          <IsAaoVirtualEvent>false</IsAaoVirtualEvent>
+          <type>SINGLE</type>
+        </downEvent>
+        <repeat>16384</repeat>
+        <repeatFrequency>1</repeatFrequency>
+        <joystickGuid>00000000-0000-0000-0000-000000000000</joystickGuid>
+        <joystickName />
+        <joystickButton>-1</joystickButton>
+        <joystickPovControl>-1</joystickPovControl>
+        <joystickPovDirection>-1</joystickPovDirection>
+        <midiDeviceId>1</midiDeviceId>
+        <midiChannel>10</midiChannel>
+        <midiEvent>3006</midiEvent>
+        <endless>false</endless>
+        <midiEncoder>TURN_LEFT</midiEncoder>
+        <isSimKey>false</isSimKey>
+        <combinedKey>
+          <repeat>16384</repeat>
+          <repeatFrequency>1</repeatFrequency>
+          <joystickGuid>00000000-0000-0000-0000-000000000000</joystickGuid>
+          <joystickName />
+          <joystickButton>-1</joystickButton>
+          <joystickPovControl>-1</joystickPovControl>
+          <joystickPovDirection>-1</joystickPovDirection>
+          <midiDeviceId>1</midiDeviceId>
+          <midiChannel>10</midiChannel>
+          <midiEvent>5</midiEvent>
+          <endless>false</endless>
+          <midiEncoder>CLICK</midiEncoder>
+          <isSimKey>false</isSimKey>
+          <comboSuppressesEvent>true</comboSuppressesEvent>
+          <comboIsToggle>true</comboIsToggle>
+          <longClick>false</longClick>
+          <longClickTimeoutMs>0</longClickTimeoutMs>
+          <fastTurn>false</fastTurn>
+          <timeoutMs>0</timeoutMs>
+          <adaptiveRepeat>false</adaptiveRepeat>
+          <assignedKeys />
+          <vkModifiers />
+          <vkKeys />
+        </combinedKey>
+        <comboSuppressesEvent>false</comboSuppressesEvent>
+        <comboIsToggle>false</comboIsToggle>
+        <longClick>false</longClick>
+        <longClickTimeoutMs>0</longClickTimeoutMs>
+        <fastTurn>false</fastTurn>
+        <timeoutMs>0</timeoutMs>
+        <adaptiveRepeat>false</adaptiveRepeat>
+        <assignedKeys />
+        <vkModifiers />
+        <vkKeys />
+        <Action>AP_ALT_VAR_DEC</Action>
+        <Label>ALT -1000</Label>
+      </GlobalHotkey>
+      <GlobalHotkey>
+        <downEvent>
+          <Group>Autopilot</Group>
+          <Description>Decrements reference altitude</Description>
+          <SimulatorEventName>AP_SPD_VAR_INC</SimulatorEventName>
+          <MinValue>0</MinValue>
+          <MaxValue>0</MaxValue>
+          <ValueToSet>1000</ValueToSet>
+          <RollMultiplier>1</RollMultiplier>
+          <IsAaoVirtualEvent>false</IsAaoVirtualEvent>
+          <type>SINGLE</type>
+        </downEvent>
+        <repeat>16384</repeat>
+        <repeatFrequency>1</repeatFrequency>
+        <joystickGuid>00000000-0000-0000-0000-000000000000</joystickGuid>
+        <joystickName />
+        <joystickButton>-1</joystickButton>
+        <joystickPovControl>-1</joystickPovControl>
+        <joystickPovDirection>-1</joystickPovDirection>
+        <midiDeviceId>1</midiDeviceId>
+        <midiChannel>10</midiChannel>
+        <midiEvent>3004</midiEvent>
+        <endless>false</endless>
+        <midiEncoder>TURN_RIGHT</midiEncoder>
+        <isSimKey>false</isSimKey>
+        <combinedKey>
+          <repeat>16384</repeat>
+          <repeatFrequency>1</repeatFrequency>
+          <joystickGuid>00000000-0000-0000-0000-000000000000</joystickGuid>
+          <joystickName />
+          <joystickButton>-1</joystickButton>
+          <joystickPovControl>-1</joystickPovControl>
+          <joystickPovDirection>-1</joystickPovDirection>
+          <midiDeviceId>1</midiDeviceId>
+          <midiChannel>10</midiChannel>
+          <midiEvent>5</midiEvent>
+          <endless>false</endless>
+          <midiEncoder>CLICK</midiEncoder>
+          <isSimKey>false</isSimKey>
+          <comboSuppressesEvent>true</comboSuppressesEvent>
+          <comboIsToggle>true</comboIsToggle>
+          <longClick>false</longClick>
+          <longClickTimeoutMs>0</longClickTimeoutMs>
+          <fastTurn>false</fastTurn>
+          <timeoutMs>0</timeoutMs>
+          <adaptiveRepeat>false</adaptiveRepeat>
+          <assignedKeys />
+          <vkModifiers />
+          <vkKeys />
+        </combinedKey>
+        <comboSuppressesEvent>false</comboSuppressesEvent>
+        <comboIsToggle>false</comboIsToggle>
+        <longClick>false</longClick>
+        <longClickTimeoutMs>0</longClickTimeoutMs>
+        <fastTurn>false</fastTurn>
+        <timeoutMs>0</timeoutMs>
+        <adaptiveRepeat>false</adaptiveRepeat>
+        <assignedKeys />
+        <vkModifiers />
+        <vkKeys />
+        <Action>AP_SPD_VAR_INC</Action>
+        <Label>SPD_INC</Label>
       </GlobalHotkey>
       <GlobalHotkey>
         <downEvent>
@@ -3131,11 +3309,6 @@
         <type>LOOP</type>
       </AutoScript>
       <AutoScript>
-        <scriptId>A32NX Exp 1.0-A32NX - LED - Parking Brake</scriptId>
-        <delayMilliseconds>500</delayMilliseconds>
-        <type>LOOP</type>
-      </AutoScript>
-      <AutoScript>
         <scriptId>A32NX Exp 1.0-A32NX - LED - SPD Knob</scriptId>
         <delayMilliseconds>500</delayMilliseconds>
         <type>LOOP</type>
@@ -3502,11 +3675,6 @@
       <group>A32NX Exp 1.0</group>
       <label>A32NX - LED - ND1 Range</label>
       <script>(L:A320_Neo_MFD_Range_1, Number) 0 == if{ 3 (&gt;MIDI:3:CC:1:11) } (L:A320_Neo_MFD_Range_1, Number) 1 == if{ 5 (&gt;MIDI:3:CC:1:11) } (L:A320_Neo_MFD_Range_1, Number) 2 == if{ 7 (&gt;MIDI:3:CC:1:11) } (L:A320_Neo_MFD_Range_1, Number) 3 == if{ 9 (&gt;MIDI:3:CC:1:11) } (L:A320_Neo_MFD_Range_1, Number) 4 == if{ 11 (&gt;MIDI:3:CC:1:11) } (L:A320_Neo_MFD_Range_1, Number) 5 == if{ 13 (&gt;MIDI:3:CC:1:11) }</script>
-    </Script>
-    <Script>
-      <group>A32NX Exp 1.0</group>
-      <label>A32NX - LED - Parking Brake</label>
-      <script>(L:A32NX_PARK_BRAKE_LEVER_POS, Number) 0 == if{ 0 (&gt;MIDI:3:NoteOn:1:15) } els{ 2 (&gt;MIDI:3:NoteOn:1:15) }</script>
     </Script>
     <Script>
       <group>A32NX Exp 1.0</group>
